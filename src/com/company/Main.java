@@ -51,13 +51,14 @@ public class Main {
 
         // Ask user for number of crates for each house. Store in array and return this array.
         public static int[] getRecyclingPerHouse(int houses) {
+            int[] cratesPerHouse = new int[houses];
             int h = 0;
-            for (h = 0 ; cratesPerHouse < 8; h ++)
+            for (h = 0 ; h < houses; h ++)
                 System.out.println("How many recycling crates, in total, from all the houses on the street?");
             int crates = numberScanner.nextInt();
-            int[] cratesForEach = new int[crates];
 
-            return cratesForEach;
+
+            return cratesPerHouse;
         }
 
         //Add up all of the numbers in the array and return that
